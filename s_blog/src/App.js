@@ -23,7 +23,7 @@ class App extends Component {
     return (
       <div className='App'>
         <h3> Welcome to <u> {this.state.host} </u> Blog! </h3>
-        test main page
+        <hr/>
       </div>
     )
   }
