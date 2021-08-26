@@ -1,0 +1,14 @@
+import React, { Fragment } from 'react'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+
+//{(retrun)} ...이고 {} 없이 ()사용하면 retrun을 생략
+const MyRoter = () => (
+    <Fragment>
+        <Header />
+        <h2>Hello Body</h2>
+        <Footer />
+    </Fragment>
+);
+
+export default MyRoter;
