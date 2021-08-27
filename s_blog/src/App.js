@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import axios from 'axios';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import { Home, Test } from './inc'
 
 
@@ -29,10 +29,12 @@ class App extends Component {
         <hr /> */}
         <BrowserRouter>
           <Route path="/" component={Home} exact/>
-          <Route path="/test" component={Test} />
-          <Route path="/test/:data" component={Test} />
           
-
+          <Switch>
+            <Route path="/test/:data" component={Test} />
+            <Route path="/test" component={Test} />
+          </Switch>
+          
           <ul>
             <li> <Link to='/'> Home </Link> </li>
             <li> <Link to='/test'> Test </Link> </li>
