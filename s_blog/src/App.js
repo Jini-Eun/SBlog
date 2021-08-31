@@ -3,6 +3,7 @@ import './App.css';
 import axios from 'axios';
 import { BrowserRouter, Route, Link, Switch } from 'react-router-dom';
 import { Home, Test } from './inc'
+import {Main} from './page/index.js'
 
 
 class App extends Component {
@@ -39,8 +40,14 @@ class App extends Component {
             <li> <Link to='/'> Home </Link> </li>
             <li> <Link to='/test'> Test </Link> </li>
           </ul>
+          <div>
+            <Main />
+          </div>
+          
+      
           
         </BrowserRouter>
+        
 
       </div>
       
